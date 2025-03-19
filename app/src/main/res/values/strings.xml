@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Enhancing Expense Tracker App</string>
+    <string name="category">Category</string>
+    <string name="remark">Remark</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="amount">Amount</string>
+</resources>
