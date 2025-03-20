@@ -48,15 +48,15 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.ViewHold
             tvCategory = itemView.findViewById(R.id.tvCategory);
             tvRemark = itemView.findViewById(R.id.tvRemark);
 
-            itemView.setOnClickListener(v -> {
-                int position = getAdapterPosition();
-                if (position != RecyclerView.NO_POSITION) {
-                    Expense expense = expenses.get(position);
-                    Intent intent = new Intent(v.getContext(), DetailExpenseActivity.class);
-                    intent.putExtra("expenseId", expense.getId());
-                    v.getContext().startActivity(intent);
-                }
-            });
+        itemView.setOnClickListener(v -> {
+            int position = getAdapterPosition();
+            if (position != RecyclerView.NO_POSITION) {
+                Expense expense = expenses.get(position);
+                Intent intent = new Intent(v.getContext(), DetailExpenseActivity.class);
+                intent.putExtra("expenseId", expense.getId());
+                v.getContext().startActivity(intent);
+            }
+        });
         }
     }
 }
